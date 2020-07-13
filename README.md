@@ -16,7 +16,7 @@ Denote query as $q$ and documents set as $D = \{d_1, d_2, ... , d_n\}$. our mode
 
 #### Documents in .json
 
-```json
+```
 {
     d1_id: d1_text,
     d2_id: d2_text,
@@ -26,7 +26,7 @@ Denote query as $q$ and documents set as $D = \{d_1, d_2, ... , d_n\}$. our mode
 
 #### Training Data in .json
 
-```json
+```
 {
     queries: {
         q1_id: q1_text,
