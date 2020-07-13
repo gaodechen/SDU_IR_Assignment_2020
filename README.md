@@ -53,6 +53,10 @@ Each $feature_i$ computing with $q_i$ and $d_i$ combined would be the actual inp
 
 ## Method
 
+Details in **IR_Assignment.pdf**.
+
+We conducted a two-stage scheme including recalling & re-ranking to solve the issue. Specifically, **BM25** is selected in recalling stage and **blending on boosting models** is implemented in re-ranking stage.
+
 ### Feature Engineering
 
 * Preprocess raw text file and convert into dataframes
@@ -69,13 +73,11 @@ Each $feature_i$ computing with $q_i$ and $d_i$ combined would be the actual inp
 
 #### Tuning
 
-* Grid search
+* Grid Search Cross-validation
 * Bayesian Optimization
-
-Details in **IR_Assignment.pdf**.
 
 ## P.S.
 
-The feasibility of this repo has been verified by invoking classical ways of features engineering and boosting trees, but practical usage still needs promotion with more dataset and better designing.
+The feasibility of this repo has been verified by invoking classical ways of features engineering and boosting trees, but practical usage still needs promotion with more dataset and better designing & coding.
 
-We only got 500,000 documents and 20,000 queries as training data, which may lead to a less representative test result.
+We only got 500,000 documents and 20,000 queries as training data, which may lead to a less representative test result. So we don't recommend methods with specialized optimization onto this dataset.
